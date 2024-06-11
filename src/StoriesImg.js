@@ -4,13 +4,13 @@ export default [
     date: '2020',
     stories: [
       { 
-        uri: 'https://tgrscvucnnhvdxnltghk.supabase.co/storage/v1/object/public/ingredients/apple.png'
+        uri: 'https://i.imgur.com/UuKPAV8.jpeg'
       },
       { 
-        uri: 'https://tgrscvucnnhvdxnltghk.supabase.co/storage/v1/object/public/ingredients/bacon.png'
+        uri: 'https://i.imgur.com/9vLf0Vr.jpeg'
       },
       { 
-        uri: 'https://tgrscvucnnhvdxnltghk.supabase.co/storage/v1/object/public/ingredients/corn.png'
+        uri: 'https://i.imgur.com/cdjujjg.jpeg'
       }
     ]
   },
