@@ -53,14 +53,14 @@ export default [
     title: 'Marombas',
     date: 'Outubro de 2023',
     img: 'https://i.imgur.com/Y4hF43N.gif',
-    text: 'Aqui foi um colapso, coloco esta aqui para mostrar que sim, devemos voltar para academia, mas o cardio a gente faz em casa!',
+    text: 'Aqui foi um colapso, coloco esta aqui para mostrar que sim, devemos voltar para academia!',
     slug:'marombas'
   },
   {
     title: 'Primeiro date de carro',
     date: 'Junho de 2023',
     img: 'https://i.imgur.com/9nLpwLE.jpg',
-    text: 'Esse dia foi especial, primeiro date dirigindo, num lugar legal, numa data legal, queria um final diferente, mas não deu,  ainda sim, um dia especial. não sei se o desse ano chegará aos pes desse, mas so de pensar que estamos MAIS UM ano juntos, ja é mais do que especial!',
+    text: 'Esse dia foi especial, primeiro date dirigindo, num lugar legal, numa data legal! Um dia especial. não sei se o desse ano chegará aos pes desse, mas so de pensar que estamos MAIS UM ano juntos, ja é mais do que especial!',
     slug:'primeiro-date'
   },
 ]
