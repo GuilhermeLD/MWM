@@ -3,7 +3,7 @@ import { Avatar, AvatarImage } from "./Avatar";
 
 export default function MainHistory(){
   return(
-    <View className="top-48 px-4">
+    <View className="top-48 px-4 pb-56">
       <View className="gap-1 pb-4 flex-row">
         <Avatar className="size-12">
           <AvatarImage source={require('@/img/stories.png')}/>
@@ -13,9 +13,9 @@ export default function MainHistory(){
             <Text className="text-unselected text-subtitle">são paulo, brasil</Text>
           </View>
       </View>
-      <View className="">
-        <Image source={require('@/img/MainHistory.png')} className="w-full h-80 flex justify-center content-center" />
-          <Text className="font-text text-base pt-4">Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. LCD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por maniderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management</Text>
+      <View className="pb-24">
+        <Image source={require('@/img/mainImage.jpg')} className="w-full h-80 flex justify-center content-center mb-5 " />
+          <Text className="font-text text-justify text-xl">É muito doido pensar que ja nos conhecemos a tanto tempo e que a cada dia estamos nos conhecendo cada vez mais e mais, hoje completamos 4 anos de namoro, mas não são apenas 4 anos de história, uma historia que começou confusa, dolorosa, mas que pela Graça do Nosso Deus, conseguiu passar por isso e se manteve, hoje, aquilo foi fixinha baseado em tudo que ja passamos nesses 4 anos. Agradeço a Deus pela sua paciência e persistÇencia, sua doçura, dedicação e gentileza, que me encantaram e me encanta todos os dias. A Seguir, temos alguns momentos que tivemos juntos nessess 4 anos. Isso aqui, é apenas uma pequena demonstração do amor que eu sinto por você!</Text>
       </View>
 
     </View>

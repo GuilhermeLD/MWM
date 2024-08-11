@@ -1,15 +1,27 @@
+import { MaterialIcons } from "@expo/vector-icons";
+import { Link, useLocalSearchParams } from "expo-router";
 import { Image, Text, View } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
+import textMoments from "@/TextMoments";
+
 
 
 export default function Moments() {
+  const { slug } = useLocalSearchParams();
+  const moment = textMoments.filter(textMoment => textMoment.slug === slug)[0]
+
   return (
   <ScrollView>
-    <View className="px-4 w-full top-16 flex items-center ">
-      <Text className="font-bold text-4xl">outback dos crias</Text>
-      <Text className="font-light text-lg -mt-2 mb-7">13 de abril de 2013</Text>
-      <Image source={require('@/img/MainHistory.png')} className="w-full h-80 flex justify-center content-center mb-5" />
-      <Text  className="font-regular text-sm">Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. LCD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por maniderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API ManagementEspecialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. LCD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por maniderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API ManagementEspecialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management e desenvolvimento de scripts de testes automatizados. Habilidade em controle de versionamento com GitLab e implementação de CI/CD. LCD. Liderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por maniderança de equipe, integração de novos desenvolvedores e desenvolvimento de talentos.Especialista e Líder Técnico em Telecom, responsável por manutenção e melhoria de APIs. Experiência em modelagem e documentação de APIs REST com Swagger/OpenAPI. Proficiente em Apigee API Management</Text>
+    <View className="px-4 pb-16 w-full top-16 flex items-left">
+    <Link href='/past' asChild>
+      <MaterialIcons name="arrow-back-ios-new" color={'#536C51'} size={20}/> 
+    </Link>
+      <View className="flex  items-center mt-4">
+        <Text className="font-bold text-4xl">{moment.title}</Text>
+        <Text className="font-light text-lg -mt-2 mb-7">{moment.date}</Text>
+      </View>
+      <Image source={{ uri: moment.img}} className="w-full h-80 flex justify-center content-center mb-5" />
+      <Text  className="font-text text-justify text-xl">{moment.text}</Text>
     </View>
   </ScrollView>
 )}

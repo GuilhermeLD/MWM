@@ -7,27 +7,36 @@ const { Navigator, Screen } = createMaterialTopTabNavigator()
 import Header from "@/components/Header";
 import MainHistory from "@/components/MainHistory";
 import Stories from "@/components/Stories";
-import Future from "@/app/Future/future";
-import Past from "@/app/Past/past";
+import Past from "@/app/past";
 import Tabs from "@/components/Tabs";
 import InputText from "@/components/InputText";
 import Story from "@/components/Story";
+import { ScrollView } from "react-native-gesture-handler";
+import Moments from "@/components/Moments";
 
-
+function ConditionalWrapper() {`
+    
+  `}
 
 
 export default function Home(){
   return (
 <>
-  <Header />
-  <Story />
-  {/* <Header />
-  <Stories />
-  <Tabs />
-  <InputText />
-  <MainHistory /> */}
-  {/* <Future />
-  <Past /> */}
+  <ScrollView  className="pb-60">
+    <Header />
+    {/* <Story />  */}
+
+    
+    <Stories />
+    
+    <Tabs />
+    <InputText />
+    <MainHistory /> 
+
+  </ScrollView>
+  {/* <Future /> 
+  <Past />
+  <Moments /> */}
   <View className="top-40">
     {/* <NavigationContainer independent={true} >
       <Navigator screenOptions={{

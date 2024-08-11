@@ -33,11 +33,9 @@ export default function Layout(){
   }
   
   return (
-    <GestureHandlerRootView style={{ flex: 1 }} onLayout={onLayoutRootView}>
-      <ScrollView>
-        <Slot />
-        <StatusBar style="auto"/>
-      </ScrollView>
+    <GestureHandlerRootView className="flex-1" onLayout={onLayoutRootView}>
+        <StatusBar style="auto"/> 
+          <Slot />
     </GestureHandlerRootView>
   )
 }
